@@ -37,5 +37,5 @@ kubectl config --kubeconfig=myconfig set-context k8s-admin --cluster my-k8s-clus
 
 printf "\n.kubeconfig has been created Successfully."
 printf "\nPlease use the following commands to verify the authorization:"
-printf "\n\n\n\t export KUBECONIFG=myconfig"
+printf "\n\n\n\t export KUBECONFIG=myconfig"
 printf "\n\t kubectl config use-context k8s-admin \n\n\n"

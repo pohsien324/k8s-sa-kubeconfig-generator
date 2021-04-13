@@ -35,7 +35,11 @@ kubectl config --kubeconfig=myconfig set-credentials $saname --token=$token
 # Set context name for config
 kubectl config --kubeconfig=myconfig set-context k8s-admin --cluster my-k8s-cluster --user $saname
 
+# Set current context for config
+kubectl config --kubeconfig=myconfig  use-context k8s-admin
+
 printf "\n.kubeconfig has been created Successfully."
 printf "\nPlease use the following commands to verify the authorization:"
-printf "\n\n\n\t export KUBECONFIG=myconfig"
-printf "\n\t kubectl config use-context k8s-admin \n\n\n"
+printf "\n\n\n\t export KUBECONIFG=myconfig \n\n\n"
+
+
